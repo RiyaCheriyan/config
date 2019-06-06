@@ -1,6 +1,6 @@
 format_version: 5
 pipelines:
-   newinstance:
+   newinst:
       group:
             materials:
                   mygit:
