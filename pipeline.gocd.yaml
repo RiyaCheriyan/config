@@ -1,7 +1,7 @@
 format_version: 5
 pipelines:
    newinstance:
-      group: demo
+      group:
             materials:
                   mygit:
                     git: file:///projects/infra-as-code
