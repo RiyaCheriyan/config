@@ -1,6 +1,6 @@
 format_version: 5
 pipelines:
-   newi:
+   new1:
       group:
       materials:
          mygit:
