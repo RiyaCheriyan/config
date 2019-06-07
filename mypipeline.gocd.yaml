@@ -4,7 +4,7 @@ pipelines:
       group:
       materials:
          mygit:
-           git: file:///tmp/infra-as-code
+           git: file:///var/go/tmp/infra-as-code/.git/
       stages:
        plan:
          clean_workspace: true
