@@ -6,7 +6,6 @@ pipelines:
          mygit:
            git: file:///tmp/infra-as-code
       stages:
-        plan:
          approval: auto
          jobs:
            tasks:
