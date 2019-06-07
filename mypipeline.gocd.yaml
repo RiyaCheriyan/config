@@ -1,6 +1,6 @@
 format_version: 5
 pipelines:
-   newi:
+   new:
       group:
       materials:
          mygit:
@@ -9,6 +9,7 @@ pipelines:
          approval: auto
          jobs:
            tasks:
-           -scripts:
+           -script1:
               terraform init
+           -script2:   
               terraform plan
