@@ -6,10 +6,13 @@ pipelines:
          mygit:
            git: file:///tmp/infra-as-code
       stages:
+       plan:
+         clean_workspace: true
          approval: auto
          jobs:
+          TerraPlan:
            tasks:
-           -script1:
+           -script:
+              pwd
               terraform init
-           -script2:   
               terraform plan
