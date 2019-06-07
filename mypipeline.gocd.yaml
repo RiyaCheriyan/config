@@ -9,6 +9,6 @@ pipelines:
          approval: auto
          jobs:
            tasks:
-             scripts:
+           -scripts:
               terraform init
               terraform plan
