@@ -1,0 +1,15 @@
+format_version: 5
+pipelines:
+   new:
+      group:
+            materials:
+                  mygit:
+                   git: file:///tmp/infra-as-code
+            stages:
+               plan:
+                  approval: auto
+                  jobs:
+                      tasks:
+                          scripts:
+                              terraform init
+                              terraform plan
