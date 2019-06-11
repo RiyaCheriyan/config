@@ -10,4 +10,5 @@ pipelines:
       stage1:
          tasks:
            script:
-             command: pwd
+             - exec:
+                 command: pwd
