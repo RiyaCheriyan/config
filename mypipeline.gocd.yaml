@@ -7,7 +7,7 @@ pipelines:
         git: file:///var/go/tmp/infra-as-code/.git/
         branch: master
     stages:
-      stage: plan
+      stage1: plan
         jobs:
           job: TerraPlan
           tasks:
