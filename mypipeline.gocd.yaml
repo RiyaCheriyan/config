@@ -7,12 +7,17 @@ pipelines:
         git: file:///var/go/tmp/infra-as-code/.git/
         branch: master
     stages:
-      stage1:
-         tasks:
-           - exec:
-                command: pwd
+     - build:
+         jobs:
+           build:
+             tasks:
+              - exec:
+                  command: pwd
       stage2:
-         tasks:
-           - exec:
-                command: env
+       - build1:
+          jobs:
+            helo: 
+              tasks:
+               - exec:
+                   command: env
              
