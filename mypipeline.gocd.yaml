@@ -9,7 +9,7 @@ pipelines:
     stages:
      - stage1:
         jobs:
-          job: TerraPlan
+         - job: 
             tasks:
              - script:
                 command: pwd
