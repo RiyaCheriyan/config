@@ -8,8 +8,6 @@ pipelines:
         branch: master
     stages:
       stage1:
-        jobs:
-          job: 
-            tasks:
-              script:
-                command: pwd
+         tasks:
+           script:
+             command: pwd
