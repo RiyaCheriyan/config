@@ -7,7 +7,7 @@ pipelines:
         git: file:///var/go/tmp/infra-as-code/.git/
         branch: master
     stages:
-     - stage: plan
+     - stage: 
         clean_workspace: true
         approval: auto
         jobs:
