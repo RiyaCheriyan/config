@@ -8,8 +8,6 @@ pipelines:
         branch: master
     stages:
       stage: plan
-        clean_workspace: true
-        approval: auto
         jobs:
           job: TerraPlan
           tasks:
