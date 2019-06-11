@@ -11,5 +11,5 @@ pipelines:
         jobs:
          - job: 
             tasks:
-             - script:
+              script:
                 command: pwd
