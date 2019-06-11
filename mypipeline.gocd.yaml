@@ -9,6 +9,10 @@ pipelines:
     stages:
       stage1:
          tasks:
-           script:
-             - exec:
-                 command: pwd
+           - exec:
+                command: pwd
+      stage2:
+         tasks:
+           - exec:
+                command: env
+             
