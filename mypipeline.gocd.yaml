@@ -7,13 +7,13 @@ pipelines:
         git: file:///var/go/tmp/infra-as-code/.git/
         branch: master
     stages:
-     - stage: 
+      stage: plan
         clean_workspace: true
         approval: auto
         jobs:
-         - job: TerraPlan
-           tasks:
-            - script:
-               pwd
-               terraform init
-               terraform plan
+          job: TerraPlan
+          tasks:
+            script:
+              pwd
+              terraform init
+              terraform plan
