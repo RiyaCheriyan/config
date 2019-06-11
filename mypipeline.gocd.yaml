@@ -13,7 +13,7 @@ pipelines:
         jobs:
         - job: TerraPlan
           tasks:
-          -script:
+          - script:
              pwd
              terraform init
              terraform plan
