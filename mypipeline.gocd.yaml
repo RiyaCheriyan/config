@@ -13,11 +13,11 @@ pipelines:
              tasks:
               - exec:
                   command: pwd
-      stage2:
-       - build1:
-          jobs:
-            helo: 
-              tasks:
-               - exec:
-                   command: env
+    stage2:
+     - build1:
+         jobs:
+           helo: 
+             tasks:
+              - exec:
+                  command: env
              
