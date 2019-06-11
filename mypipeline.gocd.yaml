@@ -1,19 +1,19 @@
 format_version: 5
 pipelines:
-   new:
-      group:
-      materials:
-         mygit:
-           git: file:///var/go/tmp/infra-as-code/.git/
-           branch: master
-      stages:
-      - stage: plan
+  new:
+    group:
+    materials:
+      mygit:
+        git: file:///var/go/tmp/infra-as-code/.git/
+        branch: master
+    stages:
+     - stage: plan
         clean_workspace: true
         approval: auto
         jobs:
-        - job: TerraPlan
-          tasks:
-          - script:
-             pwd
-             terraform init
-             terraform plan
+         - job: TerraPlan
+           tasks:
+            - script:
+               pwd
+               terraform init
+               terraform plan
